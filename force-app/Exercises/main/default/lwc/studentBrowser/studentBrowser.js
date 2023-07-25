@@ -4,7 +4,7 @@ export default class StudentBrowser extends LightningElement {
   studentList = [];
   constructor() {
     super();
-    const studentNames = ["Rad", "Stuart", "Andres", "Rahul", "Amit", "Simon"];
+    const studentNames = ["Rad", "Stuart", "Andres", "Rahul", "Amit", "Simon","saba"];
     this.studentList = studentNames.map((studentName, index) => {
       return {
         sobjectType: "Contact",
