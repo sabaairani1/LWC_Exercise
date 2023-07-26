@@ -1,5 +1,6 @@
 public with sharing class StudentBrowser {
-    public StudentBrowser() {
+    public StudentBrowser() {}
+
         @AuraEnabled(cacheable=true)
         public static List<Contact> getStudents(String instructorId,String courseDeliveryId) {
             String query = '';
@@ -23,5 +24,5 @@ public with sharing class StudentBrowser {
             
             return Database.query(query);
         }
-    }
+    
 }
