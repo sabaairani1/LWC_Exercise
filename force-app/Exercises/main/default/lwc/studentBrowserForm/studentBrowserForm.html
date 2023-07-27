@@ -16,19 +16,20 @@
           </lightning-combobox>
         </lightning-layout-item>
         <!-- Deliveries drop-down -->
-        <lightning-combobox
+        
+        <lightning-layout-item
+          padding="around-small"
+          size="4"
+        >
+      <lightning-combobox
           name="deliverySelector"
           label="Select Delivery"
           variant="label-hidden"
           value={selectedDeliveryId}
           placeholder="Select a delivery"
           options={deliveries}
-        >
-        </lightning-combobox>
-        <lightning-layout-item
-          padding="around-small"
-          size="4"
-        ></lightning-layout-item>
+          onchange={onDeliveryChange}>
+        </lightning-combobox></lightning-layout-item>
       </lightning-layout>
     </lightning-card>
   </div>
