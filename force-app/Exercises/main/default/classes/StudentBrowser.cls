@@ -1,5 +1,5 @@
 public with sharing class StudentBrowser {
-    public StudentBrowser() {}
+   
 
         @AuraEnabled(cacheable=true)
         public static List<Contact> getStudents(String instructorId,String courseDeliveryId) {
